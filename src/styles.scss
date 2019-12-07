@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.leaflet-interactive{
+  &.active{
+    stroke: rgb(102, 102, 102);
+    stroke-width: 2px;
+  }
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 2px;
+
+  .school-wrap {
+    display: flex; flex-direction: column;
+    img {
+      height: auto; width: 100%; margin-bottom: 5px;
+      object-fit: cover; max-height: 210px;
+    }
+    div{
+      margin-top: 14px;
+    }
+  }
+}
+.leaflet-marker-draggable{
+  display: none;
+}
+.leaflet-routing-container {
+  width: fit-content;
+  .leaflet-routing-alt{
+    padding: 0 6px;
+  }
+  h2, table{
+    display: none;
+  }
+  h3{
+    margin: 0; width: fit-content;
+  }
+}
+
+.school-button{
+  border: none; background: #673ab7; color: white; cursor: pointer;
+  margin-top: 5px; padding: 6px; width: fit-content; transition: .3s;
+  &:hover{
+    background: #834ae8;
+  }
+}
